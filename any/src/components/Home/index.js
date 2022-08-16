@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Nav'
 import Carousel from 'better-react-carousel'
+
 /* importing photos for carousel */
 import img1 from '../../assets/images/DSC_0590.jpg'
 import img2 from '../../assets/images/DSC_1535.jpg'
@@ -37,27 +38,27 @@ function Home() {
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img5} alt="car painting"/>
+                    <img width="50%" src={img5} alt="city skyline"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img6} alt="car painting"/>
+                    <img width="50%" src={img6} alt="fireworks"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img7} alt="car painting"/>
+                    <img width="50%" src={img7} alt="cars"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img8} alt="car painting"/>
+                    <img width="50%" src={img8} alt="softball game"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img9} alt="car painting"/>
+                    <img width="50%" src={img9} alt="softball game"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img10} alt="car painting"/>
+                    <img width="50%" src={img10} alt="car"/>
                 </Carousel.Item>
 
             </Carousel>
