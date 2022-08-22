@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "../Nav";
+import emailjs from 'emailjs-com'
 
 function Contact() {
     const [ name, setName ] = useState('')
@@ -9,19 +10,27 @@ function Contact() {
 
     const submit = () => {
         if (name && email && message) {
+            const serviceId = 'service_e0bjxfj';
+            const templateId = 'template_8a3llrt';
+            const userId = 'yDtO9YVvkvCedmaxs';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+            .then(response => console.log(response))
+            .then(error => console.log(error));
+
             setName('')
             setEmail('')
             setMessage('')
-            setEmailSent('')
+            setEmailSent('true')
         } else {
             alert('Please fill in all fields.')
         }
     }
-
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
 
     return (
         <>
