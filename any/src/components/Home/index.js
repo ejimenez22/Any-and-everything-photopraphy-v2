@@ -3,16 +3,16 @@ import Nav from '../Nav'
 import Carousel from 'better-react-carousel'
 
 /* importing photos for carousel */
-import img1 from '../../assets/images/Landscape/landscape3.jpg'
-import img2 from '../../assets/images/Racing/racing11.jpg'
-import img3 from '../../assets/images/Racing/racing12.jpg'
-import img4 from '../../assets/images/Racing/racing13.jpg'
-import img5 from '../../assets/images/Landscape/landscape4.jpg'
-import img6 from '../../assets/images/Landscape/landscape5.jpg'
-import img7 from '../../assets/images/Racing/racing14.jpg'
-import img8 from '../../assets/images/Softball/softball1.jpg'
-import img9 from '../../assets/images/Softball/softball2.jpg'
-import img10 from '../../assets/images/Racing/racing15.jpg'
+import img1 from '../../assets/images/Landscape/3.jpg'
+import img2 from '../../assets/images/Racing/11.jpg'
+import img3 from '../../assets/images/Racing/12.jpg'
+import img4 from '../../assets/images/Racing/13.jpg'
+import img5 from '../../assets/images/Landscape/4.jpg'
+import img6 from '../../assets/images/Landscape/5.jpg'
+import img7 from '../../assets/images/Racing/10.jpg'
+import img8 from '../../assets/images/Softball/1.jpg'
+import img9 from '../../assets/images/Softball/2.jpg'
+import img10 from '../../assets/images/Racing/14.jpg'
 
 function Home() {
     return (

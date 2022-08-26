@@ -14,6 +14,7 @@ function Portfolio(props) {
         <section>
             <Photolist category={currentCategory.name} />
         </section>
+        
         </>
     )
 }
