@@ -1,7 +1,9 @@
 import React from "react";
 import Nav from "../Nav";
+import Photolist from "../Photos";
 
-function Portfolio() {
+function Portfolio(props) {
+    const {currentCategory} = props
 
     return (
         <>
@@ -9,6 +11,9 @@ function Portfolio() {
         <div>
             <h1>My Work</h1>
         </div>
+        <section>
+            <Photolist category={currentCategory.name} />
+        </section>
         </>
     )
 }

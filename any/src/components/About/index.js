@@ -8,7 +8,7 @@ function About() {
         <section className="aboutMe" id="about">
             <h1>About Me</h1>
             <div>
-                <img alt="family" src={require('../../assets/images/Joe-familia.jpg')}></img>
+                <img alt="family" src={require('../../assets/images/Misc/Joe-familia.jpg')}></img>
             </div>
             <div>
                 <article>
