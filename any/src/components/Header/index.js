@@ -11,32 +11,17 @@ function Header(props) {
 
     return (
       <section>
-        <header></header>
-        <h1> Any & Everything Photography </h1>
-        <TypeAnimation
-          sequence={[
-            'Bringing you photos of Airshows...',
-            1000,
-            'Bringing you photos of Landscapes...',
-            1000,
-            'Bringing you photos of Concerts...', 
-            1000,
-            'Bringing you photos of Portraits...',
-            1000,
-            'Bringing you photos of Racing...',
-            1000,
-            'Bringing you photos of Softball...', 
-            1000,
-            () => {
-              console.log('Done typing!');
-            }
-          ]}
-          wrapper="div"
-          cursor={true}
-          repeat={Infinity}
-          style={{ fontSize: '1.5em' }}
-        />
+        <header className="home-header">
+          <div class="container">
+            <div className="home-header-text">
+              <h1>Any & Everything</h1>
+              <h3>Photography</h3>
+            </div>
+          </div>
+        </header>
         <div>
+          
+          {/* 
           <nav>
             <ul>
               {categories.map((category) => (
@@ -54,7 +39,7 @@ function Header(props) {
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav> */}
         </div>
       </section>
     );

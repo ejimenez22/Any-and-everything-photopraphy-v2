@@ -35,11 +35,22 @@ function Contact() {
     return (
         <>
         <Nav />
-        <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-        <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-        <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-        <button onClick={submit}>Send Message</button>
-        <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+        <form>
+            <div className='form-group'>
+                <label for='email'>Your Email: </label>
+                <input type="email" className='form-control' placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+            </div>
+            <div className='form-group'>
+                <label for='name'>Your Name: </label>
+                <input type="text" className='form-control' placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+            </div>
+            <div className='form-group'>
+                <label for='message'>Message:</label>
+                <textarea className='form-control' placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+            </div>
+            <button className="btn btn-primary" onClick={submit}>Send Message</button>
+            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+        </form>
         </>
     )
 }

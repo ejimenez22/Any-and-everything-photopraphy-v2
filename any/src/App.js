@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Home from './components/Home';
+import Nav from './components/Nav';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
@@ -45,6 +46,7 @@ function App() {
       setCurrentCategory = {setCurrentCategory}
       currentCategory = {currentCategory}
       >
+        <Nav></Nav>
       </Header>
     <Routes>
       <Route path='/*' element={<Home />} />

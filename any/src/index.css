@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.home-header-text {
+  text-align: center;
+}
+
+.text-animation {
+  text-align: center;
+}
+
+
+
+
+
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: white;
+  transition: color 0.2s;
+  position: sticky;
+}
+
+.bm-item:hover {
+  color: #b6b2b3;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  left: 20px;
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: black;
+}
+
+.bm-cross-button {
+  height: 25px;
+  width: 25px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-menu {
+  background: #171717;
+  box-shadow: 4px 4px 20px #2994D1;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}

@@ -5,24 +5,20 @@ import { slide as Menu } from 'react-burger-menu';
 function Nav() {
 
     return (
-        <>
-        <div>
-            <nav>
-                <NavLink exact='true' to='/' className='navLink'>
-                    <h3>Home</h3>
-                </NavLink>
-                <NavLink exact='true' to='/about' className='navLink'>
-                    <h3>About</h3>
-                </NavLink>
-                <NavLink exact='true' to='/contact' className='navLink'>
-                    <h3>Contact</h3>
-                </NavLink>
-                <NavLink exact='true' to='/portfolio' className='navLink'>
-                    <h3>Portfolio</h3>
-                </NavLink>
-            </nav>
-        </div>
-        </>
+        <Menu>
+            <NavLink exact='true' to='/' className='menu-item'>
+                <h3>Home</h3>
+            </NavLink>
+            <NavLink exact='true' to='/about' className='mnu-item'>
+                <h3>About</h3>
+            </NavLink>
+            <NavLink exact='true' to='/contact' className='menu-item'>
+                <h3>Contact</h3>
+            </NavLink>
+            <NavLink exact='true' to='/portfolio' className='menu-item'>
+                <h3>Portfolio</h3>
+             </NavLink>
+        </Menu>
     )
 }
 

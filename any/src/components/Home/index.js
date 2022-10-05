@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../Nav'
 import Carousel from 'better-react-carousel'
+import { TypeAnimation } from 'react-type-animation';
 
 /* importing photos for carousel */
 import img1 from '../../assets/images/Landscape/3.jpg'
@@ -18,8 +19,32 @@ function Home() {
     return (
         <>
         <Nav />
+        <div className="text-animation">
+            <TypeAnimation
+            sequence={[
+                'Bringing you photos of Airshows...',
+                1000,
+                'Bringing you photos of Landscapes...',
+                1000,
+                'Bringing you photos of Concerts...', 
+                1000,
+                'Bringing you photos of Portraits...',
+                1000,
+                'Bringing you photos of Racing...',
+                1000,
+                'Bringing you photos of Softball...', 
+                1000,
+                () => {
+                 console.log('Done typing!');
+                }
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1.5em' }}
+            />
+        </div>
         <div>
-            <h1>Any & Everything Photography</h1>
             <Carousel cols={3} rows={1} gap={3} loop>
                 <Carousel.Item>
                     <img width="50%" src={img1} alt="flowers"/>
