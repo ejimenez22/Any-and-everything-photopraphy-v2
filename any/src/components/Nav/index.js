@@ -1,11 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import { slide as Menu } from 'react-burger-menu'; //
 
 function Nav() {
 
-    return (
-
+    return ( 
         <div className="nav-container">
             <div className="nav-links">
                 <div className='menu-item'>
