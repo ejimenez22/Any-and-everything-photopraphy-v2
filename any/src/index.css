@@ -14,8 +14,10 @@ code {
 
 
 
-.home-header-text {
-  text-align: center;
+.home-header-img {
+  width: 100%;
+  background:#ab78e3;
+  
 }
 
 .text-animation {

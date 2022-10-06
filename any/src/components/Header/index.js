@@ -1,5 +1,5 @@
 import React from "react";
-import { TypeAnimation } from 'react-type-animation';
+import headerimg from "../../assets/images/header-img/Drawing.png"
 
 
 function Header(props) {
@@ -12,10 +12,9 @@ function Header(props) {
     return (
       <section>
         <header className="home-header">
-          <div class="container">
-            <div className="home-header-text">
-              <h1>Any & Everything</h1>
-              <h3>Photography</h3>
+          <div className="">
+            <div className="">
+              <img className="home-header-img" src={headerimg}></img>
             </div>
           </div>
         </header>
