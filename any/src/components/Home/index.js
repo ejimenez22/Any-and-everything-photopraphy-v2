@@ -6,14 +6,14 @@ import { TypeAnimation } from 'react-type-animation';
 /* importing photos for carousel */
 import img1 from '../../assets/images/Landscape/3.jpg'
 import img2 from '../../assets/images/Racing/11.jpg'
-import img3 from '../../assets/images/Racing/12.jpg'
-import img4 from '../../assets/images/Racing/13.jpg'
-import img5 from '../../assets/images/Landscape/4.jpg'
-import img6 from '../../assets/images/Landscape/5.jpg'
-import img7 from '../../assets/images/Racing/10.jpg'
+import img3 from '../../assets/images/Landscape/1.jpg'
+import img4 from '../../assets/images/Racing/12.jpg'
+import img5 from '../../assets/images/Concert/0.jpg'
+import img6 from '../../assets/images/Landscape/0.jpg'
+import img7 from '../../assets/images/Portraits/17.jpg'
 import img8 from '../../assets/images/Softball/1.jpg'
 import img9 from '../../assets/images/Softball/2.jpg'
-import img10 from '../../assets/images/Racing/14.jpg'
+import img10 from '../../assets/images/Portraits/4.jpg'
 
 function Home() {
     return (
@@ -47,43 +47,43 @@ function Home() {
         <div>
             <Carousel cols={3} rows={1} gap={3} loop>
                 <Carousel.Item>
-                    <img width="50%" src={img1} alt="flowers"/>
+                    <img width="80%" src={img1} alt="flowers"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img2} alt="car painting"/>
+                    <img width="80%" src={img2} alt="car painting"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img3} alt="car painting"/>
+                    <img width="80%" src={img3} alt="car painting"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img4} alt="car painting"/>
+                    <img width="80%" src={img4} alt="landscape"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img5} alt="city skyline"/>
+                    <img width="80%" src={img5} alt="concert"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img6} alt="fireworks"/>
+                    <img width="80%" src={img6} alt="landscape"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img7} alt="cars"/>
+                    <img width="80%" src={img7} alt="portrait"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img8} alt="softball game"/>
+                    <img width="80%" src={img8} alt="softball game"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img9} alt="softball game"/>
+                    <img width="80%" src={img9} alt="softball game"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="50%" src={img10} alt="car"/>
+                    <img width="80%" src={img10} alt="wedding portrait"/>
                 </Carousel.Item>
 
             </Carousel>
