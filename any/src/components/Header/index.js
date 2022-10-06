@@ -18,7 +18,30 @@ function Header(props) {
             </div>
           </div>
         </header>
-      </section>
+        
+        <div>
+          {/* 
+          <nav>
+            <ul>
+            {categories.map((category) => (
+                <li
+                  className={`mx-1 ${currentCategory.name === category.name && "navActive"}`}
+                  key={category.name}
+                >
+                  <span
+                    onClick={() => {
+                      setCurrentCategory(category);
+                    }}
+                  >
+                    {category.name + " • "}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </nav> 
+          */}
+        </div>
+    </section>
     );
 }
 
