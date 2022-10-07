@@ -49,8 +49,17 @@ function Contact() {
                 <textarea className='form-control' placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
             </div>
             <button className="btn btn-primary" onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
+            <span className={emailSent ? 'visible' : null}>
+                <br/>Thank you for your message, we will be in touch in no time!</span>
         </form>
+        <br/>
+        <footer>
+            <div>
+            We Process All Payment Types
+            <br/>
+Visa Master Card American Express Discover Gift Card JCB HSA WEX
+            </div>
+        </footer>
         </>
     )
 }
