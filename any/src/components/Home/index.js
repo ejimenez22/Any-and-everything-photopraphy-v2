@@ -19,31 +19,6 @@ function Home() {
     return (
         <>
         <Nav />
-        <div className="text-animation">
-            <TypeAnimation
-            sequence={[
-                'Bringing you photos of Airshows...',
-                1000,
-                'Bringing you photos of Landscapes...',
-                1000,
-                'Bringing you photos of Concerts...', 
-                1000,
-                'Bringing you photos of Portraits...',
-                1000,
-                'Bringing you photos of Racing...',
-                1000,
-                'Bringing you photos of Softball...', 
-                1000,
-                () => {
-                 console.log('Done typing!');
-                }
-            ]}
-            wrapper="div"
-            cursor={true}
-            repeat={Infinity}
-            style={{ fontSize: '1.5em' }}
-            />
-        </div>
         <div>
             <Carousel cols={3} rows={1} gap={3} loop>
                 <Carousel.Item>
@@ -87,6 +62,31 @@ function Home() {
                 </Carousel.Item>
 
             </Carousel>
+        </div>
+        <div className="text-animation">
+            <TypeAnimation
+            sequence={[
+                'Bringing you photos of Airshows...',
+                1000,
+                'Bringing you photos of Landscapes...',
+                1000,
+                'Bringing you photos of Concerts...', 
+                1000,
+                'Bringing you photos of Portraits...',
+                1000,
+                'Bringing you photos of Racing...',
+                1000,
+                'Bringing you photos of Softball...', 
+                1000,
+                () => {
+                 console.log('Done typing!');
+                }
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1.5em' }}
+            />
         </div>
         </>
     )

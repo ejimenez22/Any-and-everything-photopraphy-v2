@@ -35,7 +35,7 @@ function Contact() {
     return (
         <>
         <Nav />
-        <form>
+        <form className="contact-form">
             <div className='form-group'>
                 <label for='email'>Your Email: </label>
                 <input type="email" className='form-control' placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
