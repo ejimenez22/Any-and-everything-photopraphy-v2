@@ -47,6 +47,13 @@ code {
 
 
 
+.form-container {
+  margin-bottom: 2em;
+  background-image: url('./assets/images/header-img/Drawing-2.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .contact-form {
   display: inline-block;
   align-items: center;
@@ -54,6 +61,7 @@ code {
   margin-top: 5em;
   background: #67c276;
   padding: 5%;
+  border-radius: 15px;
 }
 
 .form-group {

@@ -35,6 +35,7 @@ function Contact() {
     return (
         <>
         <Nav />
+        <section className="form-container">
         <form className="contact-form">
             <div className='form-group'>
                 <label for='email'>Your Email: </label>
@@ -51,6 +52,7 @@ function Contact() {
             <button className="btn btn-primary" onClick={submit}>Send Message</button>
             <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
         </form>
+        </section>
         </>
     )
 }
