@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
@@ -14,14 +15,18 @@ code {
 
 
 
+
 .home-header-img {
   width: 100%;
-  background: #dcc0fa;
 }
 
 
 .nav-links {
   display: inline-flex;
+}
+
+.nav-text {
+  position: relative;
 }
 
 .nav-container {
@@ -42,45 +47,23 @@ code {
 
 
 
-/*
-.bm-item {
+.form-container {
+  margin-bottom: 2em;
+  background-image: url('./assets/images/header-img/Drawing-2.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.contact-form {
   display: inline-block;
-  text-decoration: none;
-  margin-bottom: 15px;
-  color: white;
-  transition: color 0.2s;
-  position: sticky;
+  align-items: center;
+  width: 30%;
+  margin-top: 5em;
+  background: #67c276;
+  padding: 5%;
+  border-radius: 15px;
 }
 
-.bm-item:hover {
-  color: #b6b2b3;
+.form-group {
+  margin-bottom: 3em;
 }
-
-.bm-burger-button {
-  position: absolute;
-  width: 40px;
-  height: 35px;
-  left: 20px;
-  top: 20px;
-}
-
-.bm-burger-bars {
-  background: black;
-}
-
-.bm-cross-button {
-  height: 25px;
-  width: 25px;
-}
-
-.bm-cross {
-  background: white;
-}
-
-.bm-menu {
-  background: #171717;
-  box-shadow: 4px 4px 20px #2994D1;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-}
-*/

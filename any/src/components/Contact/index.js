@@ -35,7 +35,8 @@ function Contact() {
     return (
         <>
         <Nav />
-        <form>
+        <section className="form-container">
+        <form className="contact-form">
             <div className='form-group'>
                 <label for='email'>Your Email: </label>
                 <input type="email" className='form-control' placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
@@ -60,6 +61,7 @@ function Contact() {
 Visa Master Card American Express Discover Gift Card JCB HSA WEX
             </div>
         </footer>
+        </section>
         </>
     )
 }
