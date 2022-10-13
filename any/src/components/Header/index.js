@@ -1,5 +1,5 @@
 import React from "react"
-import headerimg from "../../assets/images/header-img/Drawing.png"
+import headerimg from "../../assets/images/header-img/Drawing-3.png"
 import { NavLink } from "react-router-dom";
 
 

@@ -39,11 +39,11 @@ function Contact() {
         <form className="contact-form">
             <div className='form-group'>
                 <label for='email'>Your Email: </label>
-                <input type="email" className='form-control' placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
+                <input type="email" className='form-control' placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
             </div>
             <div className='form-group'>
                 <label for='name'>Your Name: </label>
-                <input type="text" className='form-control' placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
+                <input type="text" className='form-control' placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
             </div>
             <div className='form-group'>
                 <label for='message'>Message:</label>
