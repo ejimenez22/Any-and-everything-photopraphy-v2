@@ -13,56 +13,11 @@ import img6 from '../../assets/images/Landscape/0.jpg'
 import img7 from '../../assets/images/Portraits/17.jpg'
 import img8 from '../../assets/images/Softball/1.jpg'
 import img9 from '../../assets/images/Softball/2.jpg'
-import img10 from '../../assets/images/Portraits/4.jpg'
 
 function Home() {
     return (
         <>
         <Nav />
-        <div>
-            <Carousel cols={3} rows={1} gap={3} loop>
-                <Carousel.Item>
-                    <img width="80%" src={img1} alt="flowers"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img2} alt="car painting"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img3} alt="car painting"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img4} alt="landscape"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img5} alt="concert"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img6} alt="landscape"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img7} alt="portrait"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img8} alt="softball game"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img9} alt="softball game"/>
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <img width="80%" src={img10} alt="wedding portrait"/>
-                </Carousel.Item>
-
-            </Carousel>
-        </div>
         <div className="text-animation">
             <TypeAnimation
             sequence={[
@@ -76,7 +31,7 @@ function Home() {
                 1000,
                 'Bringing you photos of Racing...',
                 1000,
-                'Bringing you photos of Softball...', 
+                'Bringing you photos of... well anything!', 
                 1000,
                 () => {
                  console.log('Done typing!');
@@ -87,6 +42,45 @@ function Home() {
             repeat={Infinity}
             style={{ fontSize: '1.5em' }}
             />
+        </div>
+        <div className="home-back">
+            <Carousel cols={3} rows={1} gap={3} loop>
+                <Carousel.Item>
+                    <img width="80%" className="purple-img" src={img1} alt="flowers"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="green-img" src={img2} alt="car painting"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="purple-img" src={img3} alt="car painting"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="green-img" src={img4} alt="landscape"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="purple-img" src={img5} alt="concert"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="green-img" src={img6} alt="landscape"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="purple-img" src={img7} alt="portrait"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="green-img" src={img8} alt="softball game"/>
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <img width="80%" className="purple-img" src={img9} alt="softball game"/>
+                </Carousel.Item>
+            </Carousel>
         </div>
         </>
     )
