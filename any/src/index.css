@@ -20,30 +20,47 @@ code {
   width: 100%;
 }
 
-
-.nav-links {
-  display: inline-flex;
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: white;
+  transition: color 0.2s;
+  position: sticky;
 }
 
-.nav-text {
-  position: relative;
+.bm-item:hover {
+  color: #b6b2b3;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
 }
 
-.menu-item {
-  margin-left: 4em;
-  margin-right: 4em;
+.bm-burger-bars {
+  background: #ACD95F;
+  border: 2px solid #5E09A8;
 }
 
+.bm-cross-button {
+  height: 25px;
+  width: 25px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-menu {
+  background: #171717;
+  box-shadow: 4px 4px 20px #2994D1;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
 
 
 
@@ -78,9 +95,18 @@ code {
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
+    width: 70%;
   }
 
   .form-container {
     background-size: contain;
+  }
+
+  .bm-burger-button {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
   }
 }

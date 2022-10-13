@@ -1,6 +1,5 @@
 import React from "react"
 import headerimg from "../../assets/images/header-img/Drawing-3.png"
-import { NavLink } from "react-router-dom";
 
 
 function Header(props) {
@@ -14,9 +13,7 @@ function Header(props) {
       <section>
         <header className="home-header">
           <div className="">
-            <div className="nav-text">
-                <img className="home-header-img" src={headerimg}></img>
-            </div>
+            <img className="home-header-img" src={headerimg}></img>
           </div>
         </header>
         
