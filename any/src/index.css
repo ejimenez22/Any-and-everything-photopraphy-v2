@@ -1,3 +1,4 @@
+/********************************* General Styling *********************************/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background: #bafab6;
 }
 
 code {
@@ -14,56 +16,119 @@ code {
 }
 
 
-
-
+/********************************* Header and Sidebar Styling *********************************/
 .home-header-img {
   width: 100%;
+  background: #d8b9fa;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 15px;
+  color: white;
+  transition: color 0.2s;
+  position: sticky;
+}
+
+.bm-item:hover {
+  color: #b6b2b3;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: #ACD95F;
+  border: 2px solid #5E09A8;
+}
+
+.bm-cross-button {
+  height: 25px;
+  width: 25px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-menu {
+  background: #171717;
+  box-shadow: 4px 4px 20px #2994D1;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
 }
 
 
-.nav-links {
-  display: inline-flex;
-}
-
-.nav-text {
-  position: relative;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.menu-item {
-  margin-left: 4em;
-  margin-right: 4em;
-}
-
-
-
-
+/********************************* Contact Form Styling *********************************/
 .form-container {
-  margin-bottom: 2em;
   background-image: url('./assets/images/header-img/Drawing-2.png');
-  background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form {
-  display: inline-block;
-  align-items: center;
-  width: 30%;
+  width: 50%;
   margin-top: 5em;
-  background: #67c276;
+  margin-bottom: 3em;
+  background: #C67BFF;
   padding: 5%;
   border-radius: 15px;
 }
 
 .form-group {
   margin-bottom: 3em;
+}
+
+
+/********************************* Homepage Styling *********************************/
+.purple-img {
+  border: 10px solid #9110FE;
+}
+
+.green-img {
+  border: 10px solid #219608;
+}
+
+.home-back {
+  background-image: url('./assets/images/header-img/home-img.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/********************************* Responsive Styling *********************************/
+@media screen and (max-width: 980px) {
+ 
+}
+
+@media screen and (max-width: 575px){
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 70%;
+  }
+
+  .form-container {
+    background-size: contain;
+  }
+
+  .bm-burger-button {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+  }
+
+  .home-back {
+    background-image: none;
+  }
 }
