@@ -14,13 +14,6 @@ code {
     monospace;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  text-shadow: 1px 1px 1px black;
-}
-
-
 
 /********************************* Header and Sidebar Styling *********************************/
 .home-header-img {
@@ -109,7 +102,7 @@ a {
 
 .contact-form {
   width: 50%;
-  margin-top: 5em;
+  margin-top: 3em;
   margin-bottom: 3em;
   background: #c89cf7;
   padding: 5%;
@@ -124,8 +117,17 @@ a {
 }
 
 .contact-btn {
-  background-color: #9110FE;
+  font-size: 15px;
+  font-weight: 220;
+  letter-spacing: 1px;
+  padding: 10px 30px 10px;
+  border: 3px solid #9110FE;
+  background: #91d995;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
 
 /********************************* Homepage Styling *********************************/
 .purple-img {
