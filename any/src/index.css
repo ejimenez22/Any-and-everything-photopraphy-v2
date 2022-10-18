@@ -156,8 +156,33 @@ code {
 }
 
 .text-animation {
-  margin-top: 5em;
-  background: #9110FE;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 220;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 3px solid #91d995;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-animation::after {
+  content: "";
+  background-color: #c89cf7;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.text-animation:hover::after {
+  top: 0px;
+  left: 0px;
 }
 
 
@@ -211,6 +236,7 @@ code {
 
 .about-p {
   margin-top: 2em;
+  padding: 10px;
 }
 
 
@@ -247,6 +273,10 @@ code {
 
   .purple-img {
     margin-left: 1.8em;
+  }
+
+  .text-animation{
+    font-size: 15px;
   }
 
   .aboutMe {
