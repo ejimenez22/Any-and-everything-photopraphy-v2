@@ -73,7 +73,7 @@ function Home() {
                 'Bringing you photos of... well anything!', 
                 1000,
                 () => {
-                 console.log('Done typing!');
+                console.log('Done typing!');
                 }
             ]}
             wrapper="div"

@@ -6,13 +6,13 @@ function About() {
         <>
         <Nav />
         <section className="aboutMe" id="about">
-            <h1>About Me</h1>
+            <h1 className="about-text">Meet Joe</h1>
             <div>
-                <img alt="family" src={require('../../assets/images/Misc/Joe-familia.jpg')}></img>
+                <img className="about-img" alt="family" src={require('../../assets/images/Misc/Joe-familia.jpg')}></img>
             </div>
             <div>
                 <article>
-                    <p>
+                    <p className="about-p">
                         Something about Joe and why he takes pics...He's an Ok guy....he takes semi-decent pics ❤️
                     </p>
                 </article>

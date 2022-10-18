@@ -44,16 +44,16 @@ code {
 }
 
 .bm-cross-button {
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
 }
 
 .bm-cross {
-  background: white;
+  background: #c89cf7;
 }
 
 .bm-menu {
-  background:  #9110FE ;
+  background: white;
   background-size: cover;
   background-position:initial;
   box-shadow: 0px 4px 5px white;
@@ -90,6 +90,7 @@ code {
   top: 0px;
   left: 0px;
 }
+
 
 /********************************* Contact Form Styling *********************************/
 .form-container {
@@ -128,6 +129,12 @@ code {
   cursor: pointer;
 }
 
+.contact-btn:hover {
+  border: 3px solid #b86ef5;
+  font-weight: 300;
+  background: #c5edc7;
+}
+
 
 /********************************* Homepage Styling *********************************/
 .purple-img {
@@ -147,6 +154,65 @@ code {
   background-size: cover;
   margin-top: 2em;
 }
+
+.text-animation {
+  margin-top: 5em;
+  background: #9110FE;
+}
+
+
+/********************************* About Me Styling *********************************/
+.aboutMe{
+  background-image: url('./assets/images/header-img/Drawing-2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img {
+  width: 40%;
+  border: 4px solid #9110FE;
+  border-radius: 15px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.about-text {
+  margin-top: 2em;
+  margin-left: 12em;
+  margin-right: 12em;
+  margin-bottom: 2em;
+  font-size: 20px;
+  font-weight: 220;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 3px solid #c89cf7;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about-text::after {
+  content: "";
+  background-color: #91d995;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.about-text:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.about-p {
+  margin-top: 2em;
+}
+
 
 /********************************* Responsive Styling *********************************/
 @media screen and (max-width: 980px) {
@@ -177,5 +243,25 @@ code {
 
   .home-back {
     background-image: none;
+  }
+
+  .purple-img {
+    margin-left: 1.8em;
+  }
+
+  .aboutMe {
+    background-size:cover;
+  }
+
+  .about-img {
+    width: 70%;
+  }
+
+  .about-text {
+    margin: 20px;
+  }
+
+  .about-p {
+    font-size: 15px;
   }
 }
