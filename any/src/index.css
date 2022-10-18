@@ -17,6 +17,7 @@ code {
 a {
   text-decoration: none;
   color: black;
+  text-shadow: 1px 1px 1px black;
 }
 
 
@@ -29,14 +30,11 @@ a {
 .bm-item {
   display: inline-block;
   text-decoration: none;
-  margin-bottom: 15px;
+  margin-bottom: 3em;
   color: white;
   transition: color 0.2s;
   position: sticky;
-}
-
-.bm-item:hover {
-  color: #b6b2b3;
+  filter: none;
 }
 
 .bm-burger-button {
@@ -48,8 +46,7 @@ a {
 }
 
 .bm-burger-bars {
-  background: white;
-  border: 3px solid #9110FE;
+  background: #9110FE;
 }
 
 .bm-cross-button {
@@ -62,14 +59,42 @@ a {
 }
 
 .bm-menu {
-  background: #95cc97;
-  background-image: url('./assets/images/header-img/Drawing-2.png');
+  background:  #9110FE ;
   background-size: cover;
-  box-shadow: 2px 2px 10px white;
+  background-position:initial;
+  box-shadow: 0px 4px 5px white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
+.nav-btn {
+  font-size: 20px;
+  font-weight: 220;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-btn::after {
+  content: "";
+  background-color: #91d995;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.nav-btn:hover::after {
+  top: 0px;
+  left: 0px;
+}
 
 /********************************* Contact Form Styling *********************************/
 .form-container {
@@ -100,11 +125,15 @@ a {
 
 /********************************* Homepage Styling *********************************/
 .purple-img {
-  border: 10px solid #9110FE;
+  border: 5px solid #9110FE;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .green-img {
-  border: 10px solid #219608;
+  border: 5px solid #219608;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .home-back {

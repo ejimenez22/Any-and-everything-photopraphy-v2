@@ -21,39 +21,39 @@ function Home() {
         <div className="home-back">
             <Carousel cols={3} rows={1} gap={3} loop>
                 <Carousel.Item>
-                    <img width="70%" className="purple-img" src={img1} alt="flowers"/>
+                    <img width="80%" className="purple-img" src={img1} alt="flowers"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="green-img" src={img2} alt="car painting"/>
+                    <img width="80%" className="green-img" src={img2} alt="car painting"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="purple-img" src={img3} alt="car painting"/>
+                    <img width="80%" className="purple-img" src={img3} alt="car painting"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="green-img" src={img4} alt="landscape"/>
+                    <img width="80%" className="green-img" src={img4} alt="landscape"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="purple-img" src={img5} alt="concert"/>
+                    <img width="80%" className="purple-img" src={img5} alt="concert"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="green-img" src={img6} alt="landscape"/>
+                    <img width="80%" className="green-img" src={img6} alt="landscape"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="purple-img" src={img7} alt="portrait"/>
+                    <img width="80%" className="purple-img" src={img7} alt="portrait"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="green-img" src={img8} alt="softball game"/>
+                    <img width="80%" className="green-img" src={img8} alt="softball game"/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img width="70%" className="purple-img" src={img9} alt="softball game"/>
+                    <img width="80%" className="purple-img" src={img9} alt="softball game"/>
                 </Carousel.Item>
             </Carousel>
         </div>
