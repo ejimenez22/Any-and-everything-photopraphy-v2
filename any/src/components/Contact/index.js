@@ -53,6 +53,14 @@ function Contact() {
             <br></br>
             <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
         </form>
+        <br/>
+        <footer>
+            <div>
+            We Process All Payment Types
+            <br/>
+Visa Master Card American Express Discover Gift Card JCB HSA WEX
+            </div>
+        </footer>
         </section>
         </>
     )

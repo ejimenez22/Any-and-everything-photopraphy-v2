@@ -14,6 +14,7 @@ import img7 from '../../assets/images/Portraits/17.jpg'
 import img8 from '../../assets/images/Softball/1.jpg'
 import img9 from '../../assets/images/Softball/2.jpg'
 
+
 function Home() {
     return (
         <>
