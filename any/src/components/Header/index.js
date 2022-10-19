@@ -17,8 +17,8 @@ function Header(props) {
           </div>
         </header>
         
+        {/*
         <div>
-          {/* 
           <nav>
             <ul>
             {categories.map((category) => (
@@ -37,8 +37,8 @@ function Header(props) {
               ))}
             </ul>
           </nav> 
-          */}
         </div>
+        */}            
     </section>
     );
 }
