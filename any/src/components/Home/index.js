@@ -19,31 +19,6 @@ function Home() {
     return (
         <>
         <Nav />
-        <div className="text-animation">
-            <TypeAnimation
-            sequence={[
-                'Bringing you photos of Airshows...',
-                1000,
-                'Bringing you photos of Landscapes...',
-                1000,
-                'Bringing you photos of Concerts...', 
-                1000,
-                'Bringing you photos of Portraits...',
-                1000,
-                'Bringing you photos of Racing...',
-                1000,
-                'Bringing you photos of... well anything!', 
-                1000,
-                () => {
-                 console.log('Done typing!');
-                }
-            ]}
-            wrapper="div"
-            cursor={true}
-            repeat={Infinity}
-            style={{ fontSize: '1.5em' }}
-            />
-        </div>
         <div className="home-back">
             <Carousel cols={3} rows={1} gap={3} loop>
                 <Carousel.Item>
@@ -82,6 +57,31 @@ function Home() {
                     <img width="80%" className="purple-img" src={img9} alt="softball game"/>
                 </Carousel.Item>
             </Carousel>
+        </div>
+        <div className="text-animation">
+            <TypeAnimation
+            sequence={[
+                'Bringing you photos of Airshows...',
+                1000,
+                'Bringing you photos of Landscapes...',
+                1000,
+                'Bringing you photos of Concerts...', 
+                1000,
+                'Bringing you photos of Portraits...',
+                1000,
+                'Bringing you photos of Racing...',
+                1000,
+                'Bringing you photos of... well anything!', 
+                1000,
+                () => {
+                console.log('Done typing!');
+                }
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: '1.5em' }}
+            />
         </div>
         </>
     )

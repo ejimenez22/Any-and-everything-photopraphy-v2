@@ -8,22 +8,22 @@ function Nav() {
         <Menu>
             <div className='menu-item'>
               <NavLink exact='true' to='/'>
-                <h3>Home</h3>
+                <button className="nav-btn">home</button>
               </NavLink>
             </div>
             <div className='menu-item'>
               <NavLink exact='true' to='/about'>
-                <h3>About Me</h3>
+                <button className="nav-btn">about me</button>
               </NavLink>
             </div>
             <div className='menu-item'>
               <NavLink exact='true' to='/contact'>
-                <h3>Contact Me</h3> 
+                <button className="nav-btn">contact me</button> 
               </NavLink>
             </div>
             <div className='menu-item'>
               <NavLink exact='true' to='/portfolio'>
-                <h3>Portfolio</h3>
+                <button className="nav-btn">portfolio</button>
               </NavLink>
             </div>
         </Menu>

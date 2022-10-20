@@ -49,9 +49,9 @@ function Contact() {
                 <label for='message'>Message:</label>
                 <textarea className='form-control' placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
             </div>
-            <button className="btn btn-primary" onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : null}>
-                <br/>Thank you for your message, we will be in touch in no time!</span>
+            <button className="contact-btn" onClick={submit}>Send Message</button>
+            <br></br>
+            <span className={emailSent ? 'visible' : null}>Thank you for your message, we will be in touch in no time!</span>
         </form>
         <br/>
         <footer>
