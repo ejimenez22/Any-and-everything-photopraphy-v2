@@ -68,73 +68,71 @@ function Portfolio() {
         <>
         <Nav />
         <div className="container">
-        <div className='header'>
-            <h1>My Work</h1>
+            <h1 className="port-text">My Work</h1>
         </div>
+
         <div className="box">
         <div className="portfolio-photos">
-            <img src={airshow1} alt='airshow' />
-            <img src={airshow2} alt='airshow' />
-            <img src={airshow3} alt='airshow' />
-            <img src={xmas1} alt='christmas' />
-            <img src={xmas2} alt='christmas' />
-            <img src={concert1} alt='concert' />
-            <img src={landscape1} alt='landscape' />
-            <img src={landscape2} alt='landscape' />
-            <img src={landscape3} alt='landscape' />
-            <img src={landscape4} alt='landscape' />
-            <img src={landscape5} alt='landscape' />
-            <img src={landscape6} alt='landscape' />
-            <img src={portrait1} alt='portrait' />
-            <img src={portrait2} alt='portrait' />
-            <img src={portrait3} alt='portrait' />
-            <img src={portrait4} alt='portrait' />
-            <img src={portrait5} alt='portrait' />
-            <img src={portrait6} alt='portrait' />
-            <img src={portrait7} alt='portrait' />
-            <img src={portrait8} alt='portrait' />
-            <img src={portrait9} alt='portrait' />
-            <img src={portrait10} alt='portrait' />
-            <img src={portrait11} alt='portrait' />
-            <img src={portrait12} alt='portrait' />
-            <img src={portrait13} alt='portrait' />
-            <img src={portrait14} alt='portrait' />
-            <img src={portrait15} alt='portrait' />
-            <img src={portrait16} alt='portrait' />
-            <img src={portrait17} alt='portrait' />
-            <img src={portrait18} alt='portrait' />
-            <img src={portrait19} alt='portrait' />
-            <img src={portrait20} alt='portrait' />
-            <img src={portrait21} alt='portrait' />
-            <img src={portrait22} alt='portrait' />
-            <img src={portrait23} alt='portrait' />
-            <img src={portrait24} alt='portrait' />
-            <img src={portrait25} alt='portrait' />
-            <img src={portrait26} alt='portrait' />
-            <img src={portrait27} alt='portrait' />
-            <img src={racing1} alt='racing' />
-            <img src={racing2} alt='racing' />
-            <img src={racing3} alt='racing' />
-            <img src={racing4} alt='racing' />
-            <img src={racing5} alt='racing' />
-            <img src={racing6} alt='racing' />
-            <img src={racing7} alt='racing' />
-            <img src={racing8} alt='racing' />
-            <img src={racing9} alt='racing' />
-            <img src={racing10} alt='racing' />
-            <img src={racing11} alt='racing' />
-            <img src={racing12} alt='racing' />
-            <img src={racing13} alt='racing' />
-            <img src={racing14} alt='racing' />
-            <img src={racing15} alt='racing' />
-            <img src={recreation1} alt='recreation' />
-            <img src={softball1} alt='softball' />
-            <img src={softball2} alt='softball' />
-            <img src={softball3} alt='softball' />
+            <img src={airshow1} className="portfolio-img" alt='airshow' />
+            <img src={airshow2} className="portfolio-img" alt='airshow' />
+            <img src={airshow3} className="portfolio-img" alt='airshow' />
+            <img src={xmas1} className="portfolio-img" alt='christmas' />
+            <img src={xmas2} className="portfolio-img" alt='christmas' />
+            <img src={concert1} className="portfolio-img" alt='concert' />
+            <img src={landscape1} className="portfolio-img" alt='landscape' />
+            <img src={landscape2} className="portfolio-img" alt='landscape' />
+            <img src={landscape3} className="portfolio-img" alt='landscape' />
+            <img src={landscape4} className="portfolio-img" alt='landscape' />
+            <img src={landscape5} className="portfolio-img" alt='landscape' />
+            <img src={landscape6} className="portfolio-img" alt='landscape' />
+            <img src={portrait1} className="portfolio-img" alt='portrait' />
+            <img src={portrait2} className="portfolio-img" alt='portrait' />
+            <img src={portrait3} className="portfolio-img" alt='portrait' />
+            <img src={portrait4} className="portfolio-img" alt='portrait' />
+            <img src={portrait5} className="portfolio-img" alt='portrait' />
+            <img src={portrait6} className="portfolio-img" alt='portrait' />
+            <img src={portrait7} className="portfolio-img" alt='portrait' />
+            <img src={portrait8} className="portfolio-img" alt='portrait' />
+            <img src={portrait9} className="portfolio-img" alt='portrait' />
+            <img src={portrait10} className="portfolio-img" alt='portrait' />
+            <img src={portrait11} className="portfolio-img" alt='portrait' />
+            <img src={portrait12} className="portfolio-img" alt='portrait' />
+            <img src={portrait13} className="portfolio-img" alt='portrait' />
+            <img src={portrait14} className="portfolio-img" alt='portrait' />
+            <img src={portrait15} className="portfolio-img" alt='portrait' />
+            <img src={portrait16} className="portfolio-img" alt='portrait' />
+            <img src={portrait17} className="portfolio-img" alt='portrait' />
+            <img src={portrait18} className="portfolio-img" alt='portrait' />
+            <img src={portrait19} className="portfolio-img" alt='portrait' />
+            <img src={portrait20} className="portfolio-img" alt='portrait' />
+            <img src={portrait21} className="portfolio-img" alt='portrait' />
+            <img src={portrait22} className="portfolio-img" alt='portrait' />
+            <img src={portrait23} className="portfolio-img" alt='portrait' />
+            <img src={portrait24} className="portfolio-img" alt='portrait' />
+            <img src={portrait25} className="portfolio-img" alt='portrait' />
+            <img src={portrait26} className="portfolio-img" alt='portrait' />
+            <img src={portrait27} className="portfolio-img" alt='portrait' />
+            <img src={racing1} className="portfolio-img" alt='racing' />
+            <img src={racing2} className="portfolio-img" alt='racing' />
+            <img src={racing3} className="portfolio-img" alt='racing' />
+            <img src={racing4} className="portfolio-img" alt='racing' />
+            <img src={racing5} className="portfolio-img" alt='racing' />
+            <img src={racing6} className="portfolio-img" alt='racing' />
+            <img src={racing7} className="portfolio-img" alt='racing' />
+            <img src={racing8} className="portfolio-img" alt='racing' />
+            <img src={racing9} className="portfolio-img" alt='racing' />
+            <img src={racing10} className="portfolio-img" alt='racing' />
+            <img src={racing11} className="portfolio-img" alt='racing' />
+            <img src={racing12} className="portfolio-img" alt='racing' />
+            <img src={racing13} className="portfolio-img" alt='racing' />
+            <img src={racing14} className="portfolio-img" alt='racing' />
+            <img src={racing15} className="portfolio-img" alt='racing' />
+            <img src={recreation1} className="portfolio-img" alt='recreation' />
+            <img src={softball1} className="portfolio-img" alt='softball' />
+            <img src={softball2} className="portfolio-img" alt='softball' />
+            <img src={softball3} className="portfolio-img" alt='softball' />
             </div>
             </div>
-            </div>
-            
         </>
     )
 }
