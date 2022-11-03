@@ -107,9 +107,10 @@ code {
   width: 50%;
   margin-top: 3em;
   margin-bottom: 2em;
-  background: #c89cf7;
+  color: white;
+  background: black;
   padding: 5%;
-  border: 4px solid #9110FE;
+  border: 7px solid #c89cf7;
   border-radius: 15px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
@@ -121,10 +122,10 @@ code {
 
 .contact-btn {
   font-size: 15px;
-  font-weight: 220;
+  font-weight: 350;
   letter-spacing: 1px;
   padding: 10px 30px 10px;
-  border: 3px solid #9110FE;
+  border: 3px solid #c89cf7;
   background: #91d995;
   margin-bottom: 2em;
   border-radius: 10px;
@@ -138,7 +139,8 @@ code {
 }
 
 .contact-footer {
-  background: #c89cf7;
+  background: black;
+  color: white;
   border-top: 15px solid #9110FE;
   padding: 8px;
   font-size: 13px;
@@ -170,7 +172,7 @@ code {
   margin: 20px;
   font-size: 20px;
   font-weight: 220;
-  color: white;
+  color: #c89cf7;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
@@ -274,11 +276,12 @@ code {
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 25px;
-  font-weight: 220;
+  font-weight: 500;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
-  border: 3px solid #c89cf7;
+  color: white;
+  border: 10px solid #c89cf7;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -286,7 +289,7 @@ code {
 
 .port-text::after {
   content: "";
-  background-color: #91d995;
+  background-color: black;
   width: 100%;
   z-index: -1;
   position: absolute;
