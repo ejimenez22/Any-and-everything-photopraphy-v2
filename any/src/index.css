@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background: #d1d1d1;
 }
 
 code {
@@ -18,7 +19,7 @@ code {
 /********************************* Header and Sidebar Styling *********************************/
 .home-header-img {
   width: 100%;
-  background: #c89cf7;
+  background: black;
 }
 
 .bm-item {
@@ -53,13 +54,13 @@ code {
 }
 
 .bm-menu {
-  background: white;
+  background: black;
   background-size: cover;
   background-position:initial;
   box-shadow: 0px 4px 5px white;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-  border: 4px solid #c89cf7;
+  border: 4px solid #9110FE;
 }
 
 .nav-btn {
@@ -169,6 +170,7 @@ code {
   margin: 20px;
   font-size: 20px;
   font-weight: 220;
+  color: white;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
@@ -180,7 +182,7 @@ code {
 
 .text-animation::after {
   content: "";
-  background-color: #c89cf7;
+  background-color: black;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -197,10 +199,9 @@ code {
 
 
 /********************************* About Me Styling *********************************/
-.aboutMe{
+.aboutMe {
   background-image: url('./assets/images/header-img/Drawing-2.png');
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .about-img {
@@ -211,17 +212,23 @@ code {
   border-top-right-radius: 100px;
 }
 
+.about-div {
+  display: flex;
+  justify-content: center;
+}
+
 .about-text {
   margin-top: 2em;
-  margin-left: 12em;
-  margin-right: 12em;
+  width: 70%;
   margin-bottom: 2em;
   font-size: 20px;
-  font-weight: 220;
+  font-weight: 500;
+  color: white;
+  text-shadow: 3px 3px black;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
-  border: 3px solid #c89cf7;
+  border: 10px solid #c89cf7;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
@@ -229,7 +236,7 @@ code {
 
 .about-text::after {
   content: "";
-  background-color: #91d995;
+  background-color: black;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -298,7 +305,7 @@ code {
 /********************************* Responsive Styling *********************************/
 @media screen and (max-width: 980px) {
   .form-container {
-    background-size: cover;
+    background-size: contain;
   }
 
   .portfolio-photos {
@@ -344,7 +351,7 @@ code {
   }
 
   .aboutMe {
-    background-size:cover;
+    background-size:0in;
   }
 
   .about-img {
@@ -353,6 +360,7 @@ code {
 
   .about-text {
     margin: 20px;
+    width: 100%;
   }
 
   .about-p {
