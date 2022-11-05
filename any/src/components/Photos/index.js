@@ -219,10 +219,6 @@ const Photolist = ({category}) => {
             category: 'Racing'
         },
         {
-            name: 'racing15',
-            category: 'Racing'
-        },
-        {
             name: 'pewpew0',
             category: 'Recreation'
         },
@@ -250,7 +246,7 @@ const Photolist = ({category}) => {
                     <img
                     src={require(`../../assets/images/${category}/${i}.jpg`)}
                     alt={image.name}
-                    className= ''
+                    className= 'portfolio-photos portfolio-img'
                     key={image.name}
                      />
                      </>

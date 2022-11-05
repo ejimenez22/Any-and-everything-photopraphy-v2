@@ -42,16 +42,17 @@ function App() {
   <BrowserRouter basename='/'>
     <div>
       <Header
-        categories = {categories}
-        setCurrentCategory = {setCurrentCategory}
-        currentCategory = {currentCategory}
+       
         >
           <Nav></Nav>
       </Header>
       <Routes>
         <Route path='/*' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/portfolio' element={<Portfolio currentCategory = {currentCategory} />} />
+        <Route path='/portfolio' element={<Portfolio
+         categories = {categories}
+         setCurrentCategory = {setCurrentCategory}
+         currentCategory = {currentCategory}/>} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>

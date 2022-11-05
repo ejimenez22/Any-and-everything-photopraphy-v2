@@ -1,7 +1,8 @@
 import React from "react";
 import Nav from "../Nav";
+import Photolist from "../Photos";
 
-/* import gallery photos */
+/* import gallery photos 
 import airshow1 from '../../assets/images/Airshow/0.jpg'
 import airshow2 from '../../assets/images/Airshow/1.jpg'
 import airshow3 from '../../assets/images/Airshow/2.jpg'
@@ -60,77 +61,49 @@ import recreation1 from '../../assets/images/Recreation/0.jpg'
 import softball1 from '../../assets/images/Softball/0.jpg'
 import softball2 from '../../assets/images/Softball/1.jpg'
 import softball3 from '../../assets/images/Softball/2.jpg'
+import Photolist from "../Photos";
+*/
 
-
-function Portfolio() {
-
+function Portfolio(props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+    } = props
     return (
         <>
         <Nav />
         <div className="container">
             <h1 className="port-text">My Work</h1>
+            {
+        <div>
+          <nav>
+            <ul>
+            {categories.map((category) => (
+                <ul
+                  className={`mx-1 ${currentCategory.name === category.name && "navActive"}`}
+                  key={category.name}
+                >
+                  <span
+                    onClick={() => {
+                      setCurrentCategory(category);
+                    }}
+                  >
+                    {category.name}
+                  </span>
+                </ul>
+              ))}
+            </ul>
+          </nav> 
+        </div>
+        }   
         </div>
 
         <div className="box">
         <div className="portfolio-photos">
-            <img src={airshow1} className="portfolio-img green-img" alt='airshow' />
-            <img src={airshow2} className="portfolio-img purple-img" alt='airshow' />
-            <img src={airshow3} className="portfolio-img green-img" alt='airshow' />
-            <img src={xmas1} className="portfolio-img purple-img" alt='christmas' />
-            <img src={xmas2} className="portfolio-img green-img" alt='christmas' />
-            <img src={concert1} className="portfolio-img purple-img" alt='concert' />
-            <img src={landscape1} className="portfolio-img green-img" alt='landscape' />
-            <img src={landscape2} className="portfolio-img purple-img" alt='landscape' />
-            <img src={landscape3} className="portfolio-img green-img" alt='landscape' />
-            <img src={landscape4} className="portfolio-img purple-img" alt='landscape' />
-            <img src={landscape5} className="portfolio-img green-img" alt='landscape' />
-            <img src={landscape6} className="portfolio-img purple-img" alt='landscape' />
-            <img src={portrait1} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait2} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait3} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait4} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait5} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait6} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait7} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait8} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait9} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait10} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait11} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait12} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait13} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait14} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait15} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait16} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait17} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait18} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait19} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait20} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait21} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait22} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait23} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait24} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait25} className="portfolio-img green-img" alt='portrait' />
-            <img src={portrait26} className="portfolio-img purple-img" alt='portrait' />
-            <img src={portrait27} className="portfolio-img green-img" alt='portrait' />
-            <img src={racing1} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing2} className="portfolio-img green-img" alt='racing' />
-            <img src={racing3} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing4} className="portfolio-img green-img" alt='racing' />
-            <img src={racing5} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing6} className="portfolio-img green-img" alt='racing' />
-            <img src={racing7} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing8} className="portfolio-img green-img" alt='racing' />
-            <img src={racing9} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing10} className="portfolio-img green-img" alt='racing' />
-            <img src={racing11} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing12} className="portfolio-img green-img" alt='racing' />
-            <img src={racing13} className="portfolio-img purple-img" alt='racing' />
-            <img src={racing14} className="portfolio-img green-img" alt='racing' />
-            <img src={racing15} className="portfolio-img purple-img" alt='racing' />
-            <img src={recreation1} className="portfolio-img green-img" alt='recreation' />
-            <img src={softball1} className="portfolio-img purple-img" alt='softball' />
-            <img src={softball2} className="portfolio-img green-img" alt='softball' />
-            <img src={softball3} className="portfolio-img purple-img" alt='softball' />
+            <section>
+                <Photolist className="portfolio-img green-img" category={currentCategory.name} />
+            </section>
             </div>
             </div>
         </>
