@@ -15,6 +15,11 @@ code {
     monospace;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 
 /********************************* Header and Sidebar Styling *********************************/
 .home-header-img {
@@ -91,7 +96,6 @@ code {
   top: 0px;
   left: 0px;
 }
-
 
 
 /********************************* Contact Form Styling *********************************/
@@ -259,6 +263,7 @@ code {
   padding: 10px;
 }
 
+
 /********************************* Portfolio Styling *********************************/
 .portfolio-photos {
   display: grid;
@@ -275,7 +280,7 @@ code {
 
 .port-text {
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-size: 25px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -283,7 +288,6 @@ code {
   outline: 0;
   color: white;
   border: 10px solid #c89cf7;
-  cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -305,6 +309,29 @@ code {
   left: 0px;
 }
 
+.port-nav {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  border: 4px solid #91d995;
+  border-radius: 20px;
+  color: black;
+  transition: .3s;
+  font-size: 13px;
+  font-weight: 350;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  box-shadow: 8px 8px #c89cf7;
+  transition: .3s;
+  cursor: pointer;
+}
+
 
 /********************************* Responsive Styling *********************************/
 @media screen and (max-width: 980px) {
@@ -316,6 +343,10 @@ code {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
+  }
+
+  li {
+    font-size: 15px;
   }
 }
 
@@ -376,5 +407,11 @@ code {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
     margin-right: 2em;
+  }
+
+  li {
+    font-size: 8px;
+    background-color: black;
+    color: white;
   }
 }

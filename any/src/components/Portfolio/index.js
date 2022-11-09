@@ -76,12 +76,12 @@ function Portfolio(props) {
         <div className="container">
             <h1 className="port-text">My Work</h1>
             {
-        <div>
+        <div className="port-nav">
           <nav>
             <ul>
             {categories.map((category) => (
-                <ul
-                  className={`mx-1 ${currentCategory.name === category.name && "navActive"}`}
+                <li
+                  className={` ${currentCategory.name === category.name} `}
                   key={category.name}
                 >
                   <span
@@ -91,7 +91,7 @@ function Portfolio(props) {
                   >
                     {category.name}
                   </span>
-                </ul>
+                </li>
               ))}
             </ul>
           </nav> 
