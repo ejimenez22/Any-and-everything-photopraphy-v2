@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Any-and-everything-photopraphy-v2/static/css/main.54bb1062.css",
-    "main.js": "/Any-and-everything-photopraphy-v2/static/js/main.6edd9756.js",
+    "main.css": "/Any-and-everything-photopraphy-v2/static/css/main.7bff0cbd.css",
+    "main.js": "/Any-and-everything-photopraphy-v2/static/js/main.f34ff69f.js",
     "static/js/787.e7d47987.chunk.js": "/Any-and-everything-photopraphy-v2/static/js/787.e7d47987.chunk.js",
     "static/media/10.jpg": "/Any-and-everything-photopraphy-v2/static/media/10.cf3d75f6b03e883cb781.jpg",
     "static/media/1.jpg": "/Any-and-everything-photopraphy-v2/static/media/1.c7aa5d332425397f0037.jpg",
@@ -31,15 +31,17 @@
     "static/media/23.jpg": "/Any-and-everything-photopraphy-v2/static/media/23.2a202c5a90a30da2d056.jpg",
     "static/media/25.jpg": "/Any-and-everything-photopraphy-v2/static/media/25.a8023c3cef654df96f42.jpg",
     "static/media/Joe-familia.jpg": "/Any-and-everything-photopraphy-v2/static/media/Joe-familia.6c8b9c1e683ba48b3c60.jpg",
+    "static/media/hero image.jpg": "/Any-and-everything-photopraphy-v2/static/media/hero image.802c85367211b70564a6.jpg",
+    "static/media/Drawing-3.png": "/Any-and-everything-photopraphy-v2/static/media/Drawing-3.d86821b267dc7c6d5f90.png",
     "static/media/Drawing-2.png": "/Any-and-everything-photopraphy-v2/static/media/Drawing-2.69db6b790b700624076e.png",
-    "static/media/Drawing-3.png": "/Any-and-everything-photopraphy-v2/static/media/Drawing-3.6491ca2dcf2cfcd50fac.png",
+    "static/media/fb.jpg": "/Any-and-everything-photopraphy-v2/static/media/fb.f77ccdbf4daa7c988274.jpg",
     "index.html": "/Any-and-everything-photopraphy-v2/index.html",
-    "main.54bb1062.css.map": "/Any-and-everything-photopraphy-v2/static/css/main.54bb1062.css.map",
-    "main.6edd9756.js.map": "/Any-and-everything-photopraphy-v2/static/js/main.6edd9756.js.map",
+    "main.7bff0cbd.css.map": "/Any-and-everything-photopraphy-v2/static/css/main.7bff0cbd.css.map",
+    "main.f34ff69f.js.map": "/Any-and-everything-photopraphy-v2/static/js/main.f34ff69f.js.map",
     "787.e7d47987.chunk.js.map": "/Any-and-everything-photopraphy-v2/static/js/787.e7d47987.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54bb1062.css",
-    "static/js/main.6edd9756.js"
+    "static/css/main.7bff0cbd.css",
+    "static/js/main.f34ff69f.js"
   ]
 }
