@@ -99,14 +99,12 @@ function Portfolio(props) {
         }   
         </div>
 
-        <div className="box">
-        <div className="portfolio-photos">
-            <section>
-                <Photolist className="portfolio-img green-img" category={currentCategory.name} />
+          <div className="port-back">
+            <section className="portfolio-photos">
+                <Photolist className="portfolio-img" category={currentCategory.name} />
             </section>
-            </div>
-            </div>
-        </>
+          </div>
+      </>
     )
 }
 

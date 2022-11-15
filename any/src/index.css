@@ -266,16 +266,22 @@ ul {
 
 /********************************* Portfolio Styling *********************************/
 .portfolio-photos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 30px;
-  margin-left: 1em;
+  display: inline-block;
+  max-width: 65%;
 }
 
 .portfolio-img {
-  width: 90%;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 3px solid #219608;
+  box-shadow: 3px 3px 10px black;
+}
+
+.port-back {
+  background-image: url('./assets/images/header-img/Drawing-2.png');
+  background-size: auto;
 }
 
 .port-text {
@@ -339,12 +345,6 @@ li:hover {
     background-size: contain;
   }
 
-  .portfolio-photos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
-  }
-
   li {
     font-size: 15px;
   }
@@ -402,16 +402,13 @@ li:hover {
     font-size: 15px;
   }
 
-  .portfolio-photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 30px;
-    margin-right: 2em;
-  }
-
   li {
     font-size: 8px;
     background-color: black;
     color: white;
+  }
+
+  .portfolio-photos {
+    max-width: 75%;
   }
 }

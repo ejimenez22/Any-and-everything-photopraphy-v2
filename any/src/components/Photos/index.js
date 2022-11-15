@@ -246,7 +246,7 @@ const Photolist = ({category}) => {
                     <img
                     src={require(`../../assets/images/${category}/${i}.jpg`)}
                     alt={image.name}
-                    className= 'portfolio-photos portfolio-img'
+                    className= 'portfolio-img'
                     key={image.name}
                      />
                      </>
