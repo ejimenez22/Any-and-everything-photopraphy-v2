@@ -38,15 +38,15 @@ function Contact() {
         <section className="form-container">
         <form className="contact-form">
             <div className='form-group'>
-                <label for='email'>Your Email: </label>
+                <label htmlFor='email'>Your Email: </label>
                 <input type="email" className='form-control' placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
             </div>
             <div className='form-group'>
-                <label for='name'>Your Name: </label>
+                <label htmlFor='name'>Your Name: </label>
                 <input type="text" className='form-control' placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
             </div>
             <div className='form-group'>
-                <label for='message'>Message:</label>
+                <label htmlFor='message'>Message:</label>
                 <textarea className='form-control' placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
             </div>
             <button className="contact-btn" onClick={submit}>Send Message</button>
@@ -58,7 +58,7 @@ function Contact() {
             <div>
             We Process All Payment Types
             <br/>
-Visa ● Master Card ● American Express ● Discover ● Gift Card ● JCB ● HSA ● WEX
+Visa ● Master Card ● American Express ● Discover
             </div>
         </footer>
         </section>
